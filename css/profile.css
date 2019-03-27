@@ -1,0 +1,160 @@
+.profile-wrapper {
+	display: flex;
+	margin: 20px 0;
+}
+
+.profile-menu {
+	width: 300px;
+	padding: 0 10px;
+}
+
+.pmenu-card {
+	width: 100%;
+	margin: 0 auto;
+	margin-bottom: 10px;
+}
+
+.pmenu-header {
+	width: 100%;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #D4E3F4;
+	color: #0A3E72;
+}
+
+.pmenu-card li {
+	padding: 10px 5px;
+	background-color: #D4EFF4;
+	border: 0.5px solid #fff;
+}
+
+.pmenu-card li a {
+	color: #0A3E72;
+	-webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none;
+}
+
+.active-menu {
+	background-color: red;
+}
+
+.profile-body {
+	width: 100%;
+	border-left: 1px solid #ccc;
+}
+
+.profile-block {
+	display: flex;
+}
+
+.avatar-block {
+	width: 130px;
+	text-align: center;
+}
+
+.avatar-wrapper {
+	width: 130px;
+	height: 160px;
+	overflow: hidden;
+	background-color: #ccc;
+}
+
+.user-avatar {
+	width: 130px;
+	height: 160px;
+}
+
+.check-img {
+	position: absolute;
+	overflow: hidden;
+	z-index: -1;
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+}
+
+.upload-file-label {
+	padding: 5px;
+	color: blue;
+}
+
+.upload-file-label:hover {
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+.upload-img-blokc {
+	padding: 0 10px 0 25px;
+	box-sizing: border-box;
+	width: 100%;
+}
+
+.profile-form-block {
+	max-width: 570px;
+	margin-bottom: 25px;
+}
+
+.button-block {
+	position: relative;
+	width: 100%;
+	height: 50px;
+}
+
+.profile-save {
+	position: absolute;
+	right: 5px;
+}
+
+@media screen and (max-width: 870px) {
+	
+	.profile-wrapper {
+		display: block;
+	}
+
+	.profile-menu {
+		width: 100%;
+	}
+
+	.profile-body {
+		width: 100%;
+		border-left: none;
+	}
+
+	.pmenu-header {
+		height: 26px;
+		box-shadow: 0 0 10px rgba(0,0,0,0.5);
+		background-color: #D4EFF4;
+	}
+
+	.pmenu-header:hover {
+		background-color: #D4E3F4;
+		cursor: pointer;
+	}
+
+	.menu-list {
+		display: none;
+	}
+
+	.list-hidden {
+		display: block;
+		margin-top: 5px; 
+	}
+}
+
+@media  screen and (max-width: 440px) {
+	
+	.profile-block {
+		display: block;
+	}
+
+	.upload-img-blokc {
+		padding: 0;
+		margin-top: 40px; 
+	}
+}
